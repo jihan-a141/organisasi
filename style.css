@@ -1,0 +1,225 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #b8d8e8;
+    text-align: center;
+    padding: 30px 15px;
+    color: #24445a;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* JUDUL SECTION */
+section {
+    margin: 35px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+section h2 {
+    text-align: center;
+    color: #42677d;
+    margin-bottom: 25px;
+}
+
+/* FOTO KELAS */
+.foto-section {
+    text-align: center;
+}
+
+.foto-section img {
+    width: 100%;
+    max-width: 650px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 4px 12px #00000020;
+}
+
+.foto-section p {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #42677d;
+}
+
+/* STRUKTUR ORGANISASI */
+.organisasi {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
+    border-top: 5px solid #91bdd2;
+}
+
+.card h3 {
+    color: #42677d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 5px;
+}
+
+.wali {
+    background-color: #d9eaf2;
+}
+
+.ketua {
+    background-color: #fce6d5;
+}
+
+.wakil {
+    background-color: #e2edda;
+}
+
+.garis {
+    width: 2px;
+    height: 20px;
+    background-color: #91bdd2;
+    margin: auto;
+}
+
+.pengurus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* JADWAL PIKET */
+.piket {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.subjudul {
+    text-align: center;
+    color: #777;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.piket-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.hari {
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.hari h3 {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.hari ol {
+    padding-left: 22px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.senin {
+    background-color: #fbe5d0;
+}
+
+.senin h3 {
+    background-color: #b63b3b;
+}
+
+.selasa {
+    background-color: #fff1cc;
+}
+
+.selasa h3 {
+    background-color: #8a4b12;
+}
+
+.rabu {
+    background-color: #dcebd7;
+}
+
+.rabu h3 {
+    background-color: #26734d;
+}
+
+.kamis {
+    background-color: #d9e8ec;
+}
+
+.kamis h3 {
+    background-color: #1764a0;
+}
+
+.jumat {
+    background-color: #efd9e3;
+}
+
+.jumat h3 {
+    background-color: #663b82;
+}
+
+/* FOOTER */
+footer {
+    background-color: #b8d8e8;
+    color: #24445a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    .piket-container {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-section img {
+        height: 220px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
